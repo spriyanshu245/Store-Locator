@@ -1,0 +1,45 @@
+<!doctype HTML>
+<HTML>
+    <head>
+        <title>GOOGLE MAPS PROJECT</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/store-data.js"></script>
+        <script src="js/index.js"></script>
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    </head>
+    <body>
+     <div class="title">Store Locator</div>
+     <div class="search-container">
+       <div class="search">
+         <input id="zip-code-input" type="text" placeholder="Enter Zip/\"/>
+           <i class="fas fa-search" onclick="searchStores()"></i>
+    </div>
+</div>
+<div class="stores-list-container">
+    <div class="stores-list">
+        <div class="store-container">
+            <div class="store-info-container">
+                <div class="store-address">
+                    <span>Address-line-1</span>
+                    <span>Address-line-2</span>
+                </div>
+                <div class="store-phone-number">
+                    0000000000
+                </div>
+            </div>
+            <div class="store-number-container">
+                <div class="store-number">
+                    1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="map"></div>
+    
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+    </script>
+  </body>
+</HTML>
+
